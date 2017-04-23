@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ecneladis</title>
+    <link>https://ecneladis.github.io/</link>
+    <description>Recent content on Ecneladis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://ecneladis.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://ecneladis.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ecneladis.github.io/about/</guid>
+      <description>I live in Cracow, Poland and I work as security engineer at Base. I try to better understand world around me and I fail miserably. But everyday I am better at failing.
+Contact I&amp;rsquo;ll be happy to chat with you, drop me an email at ecneladis@gmail.com. You can find me on Twitter, Github, Instagram and LinkedIn.
+Copyright © Michal Marek 2017</description>
+    </item>
+    
+    <item>
+      <title>Home</title>
+      <link>https://ecneladis.github.io/home/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ecneladis.github.io/home/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
