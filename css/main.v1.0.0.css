@@ -14,8 +14,6 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -29,19 +27,38 @@ body {
 ol, ul {
   list-style: none;
 }
-blockquote, q {
-  quotes: none;
+blockquote {
+	font-family: Georgia, serif;
+	font-style: italic;
+	width: 500px;
+	margin: 0.25em 0;
+	padding: 0.25em 40px;
+	line-height: 1.45;
+	position: relative;
+	color: #383838;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
+blockquote:before {
+	display: block;
+	content: "\201C";
+	font-size: 80px;
+	position: absolute;
+	left: -20px;
+	top: -20px;
+	color: #7a7a7a;
+}
+blockquote cite {
+	color: #999999;
+	font-size: 14px;
+	display: block;
+	margin-top: 5px;
+}
+blockquote cite:before {
+	content: "\2014 \2009";
 }
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 *,
 *:before,
 *:after {
@@ -52,9 +69,6 @@ a:visited,
 a:focus,
 a:active {
   text-decoration: none;
-}
-html {
-  font-size: 16px;
 }
 body {
   display: -webkit-flex;
@@ -261,10 +275,6 @@ section.footer .container a {
   margin-left: 6px;
   margin-right: 6px;
   opacity: 0.6;
-  -webkit-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -moz-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -ms-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -o-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
 section.footer .container a:first-child {
   margin-left: 0;
@@ -370,6 +380,27 @@ section.main .content .front-matter .word-count,
 section.main .content .front-matter .reading-time .middot {
   display: none;
 }
+.content-tag {
+	font-size: 14px;
+	border-color: #000;
+	background: #C7C7C7;
+	border: 1px;
+	padding: 2px 6px;
+}
+section.main .tag-futurism {
+	background: #BBC5FF;
+}
+section.main .tag-philosophy{
+	background: #BBFFD3;
+}
+section.main .tag-entrepreneurship {
+	background: #FFF5BB;
+}
+section.main .tag-security{
+	background: #FFBBE7;
+}
+
+
 section.main .content .front-matter .middot {
   font-size: 6px;
   margin: 0 6px;
@@ -395,10 +426,6 @@ section.main .content .front-matter .tags ul {
   align-items: center;
 }
 section.main .content .front-matter .tags ul li {
-  -webkit-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -moz-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -ms-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -o-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
 section.main .content .front-matter .tags ul li:hover {
   opacity: 0.7;
@@ -546,11 +573,7 @@ section.main .container .content .post-item {
   }
 }
 a {
-  color: #428bca;
-  -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  color: #4e80ab;
 }
 a:hover {
   color: #2a6496;
@@ -559,7 +582,6 @@ section.main .content {
     width: 100%;
 }
 section.main .content .markdown {
-  font-size: 1.1em;
   line-height: 1.75em;
   color: #313537;
   font-weight: 300;
@@ -632,7 +654,7 @@ section.main .content .markdown pre code {
   font-size: 0.9rem;
 }
 section.main .content .markdown a code {
-  color: #428bca !important;
+  color: #4e80ab !important;
 }
 section.main .content .markdown a code:hover {
   text-decoration: underline;
@@ -640,7 +662,6 @@ section.main .content .markdown a code:hover {
 section.main .content .markdown p {
   text-align: justify;
   margin-top: 0;
-  margin-bottom: 1em;
 }
 section.main .content .markdown ul,
 section.main .content .markdown ol,
@@ -687,21 +708,6 @@ section.main .content .markdown abbr {
 section.main .content .markdown abbr[title] {
   cursor: help;
   border-bottom: 1px dotted #808080;
-}
-section.main .content .markdown blockquote {
-  padding: .5rem 1rem;
-  margin: .8rem 0;
-  color: #7a7a7a;
-  border-left: .25rem solid #e5e5e5;
-}
-section.main .content .markdown blockquote p:last-child {
-  margin-bottom: 0;
-}
-@media (min-width: 550px) {
-  section.main .content .markdown blockquote {
-    padding-right: 5rem;
-    padding-left: 1.25rem;
-  }
 }
 section.main .content .markdown figure {
   width: 100%;
