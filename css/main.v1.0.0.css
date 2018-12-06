@@ -296,6 +296,11 @@ section.footer .container .copyright {
   font-size: 12px;
   opacity: 0.5;
 }
+span.heart {
+  color: darkred;
+  font-weight: bold;
+  opacity: 1;
+}
 section.footer .container .icons {
   flex-grow: 0.5;
   text-align: end;
